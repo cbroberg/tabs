@@ -18,12 +18,13 @@ class Tabs extends Component {
 	renderTabs() {
 		const { data, disabled } = this.props
 		return data.map((tab, index) => {
-			const isActive = this.state.activeIndex === index
+			// const isActive = this.state.activeIndex === index
 			const isDisabled = disabled.includes(index)
 			return (
 				<Button
 					key={index}
-					className={isDisabled ? 'tab disabled' : isActive ? 'tab active' : 'tab'}
+					disable={isDisabled}
+					//	className={isDisabled ? 'tab disabled' : isActive ? 'tab active' : 'tab'}
 					onClick={isDisabled ? null : () => this.selectTabIndex(index)}
 				>{tab.label}
 				</Button>
@@ -81,7 +82,7 @@ class App extends Component {
 				content: 'This is our air travel service'
 			},
 			{
-				label: <FaSpaceShuttle size={50}/>,
+				label: <FaSpaceShuttle size={50} color={'orange'}/>,
 				content: 'This is our space shuttle service'
 			},
 			
