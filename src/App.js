@@ -3,7 +3,7 @@ import FaAutomobile from 'react-icons/lib/fa/automobile'
 import FaBed from 'react-icons/lib/fa/bed'
 import FaPlane from 'react-icons/lib/fa/plane'
 import FaSpaceShuttle from 'react-icons/lib/fa/space-shuttle'
-import Button from 'components/Styles'
+import { Button, Header } from 'components/Styles'
 
 class Tabs extends Component {
 	state = {
@@ -37,9 +37,9 @@ class Tabs extends Component {
 		const { activeIndex } = this.state
 		return (
 			<div>
-				<h2>
+				<Header>
 					{data[activeIndex].content}
-				</h2>
+				</Header>
 			</div>
 		)
 		

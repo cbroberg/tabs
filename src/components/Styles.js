@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
-const Button = styled.button`
+export const Button = styled.button`
 	border-radius: 4px;
-	font-family: 'Source Sans Pro';
 	font-size: '18px';
 	font-weight: 300;
 	font-style: 'normal'; 
@@ -16,7 +15,12 @@ const Button = styled.button`
 	user-select: none;
 `
 
-export default Button
+export const Header = styled.h2`
+	font-family: 'Source Sans Pro';
+	font-weight: 300;
+	font-style: 'italic';
+`
+
 
 /* className={isDisabled ? 'tab disabled' : isActive ? 'tab active' : 'tab'} */
 
