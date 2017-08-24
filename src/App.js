@@ -4,15 +4,19 @@ import FaBed from 'react-icons/lib/fa/bed'
 import FaPlane from 'react-icons/lib/fa/plane'
 import FaSpaceShuttle from 'react-icons/lib/fa/space-shuttle'
 import { Button, Header } from 'components/Styles'
+import { toast } from 'react-toastify'
+import Toaster from 'components/Toast.js'
 
 class Tabs extends Component {
 	state = {
 		activeIndex: 0
 	}
 
-	selectTabIndex(activeIndex) {
+	notify = (message) => toast(message)
+
+	selectTabIndex(activeIndex, message) {
 		this.setState({ activeIndex })
-		console.log(activeIndex)
+		this.notify(message)
 	}
 
 	renderTabs() {
@@ -25,7 +29,7 @@ class Tabs extends Component {
 					key={index}
 					disable={isDisabled}
 					//	className={isDisabled ? 'tab disabled' : isActive ? 'tab active' : 'tab'}
-					onClick={isDisabled ? null : () => this.selectTabIndex(index)}
+					onClick={isDisabled ? null : () => this.selectTabIndex(index, tab.notification)}
 				>{tab.label}
 				</Button>
 			)
@@ -67,23 +71,28 @@ class Tabs extends Component {
 }
 
 class App extends Component {
+	
 	render() {
 		const tabData = [
 			{ 
 				label: <FaAutomobile size={50}/>,
-				content: 'This is our car service' 
+				content: 'This is our car service',
+				notification: 'Thanks! You have selected our car service'
 			},
 			{
 				label: <FaBed size={50}/>,
-				content: 'This is our hotel service'
+				content: 'This is our hotel service',
+				notification: 'Thanks! You have selected our hotel service'
 			},
 			{
 				label: <FaPlane size={50}/>,
-				content: 'This is our air travel service'
+				content: 'This is our air service',
+				notification: 'Thanks! You have selected our air service'
 			},
 			{
 				label: <FaSpaceShuttle size={50} color={'orange'}/>,
-				content: 'This is our space shuttle service'
+				content: 'This is our space shuttle service',
+				notification: 'Thanks! You have selected our space shuttle service'
 			},
 			
 		]
@@ -94,6 +103,18 @@ class App extends Component {
 					tabsOnBottom={false}
 					disabled={[3]}
 				/>
+				<div>
+					<Toaster
+						position="top-right"
+						type="default"
+						autoClose={4000}
+						hideProgressBar={false}
+						newestOnTop={false}
+						closeOnClick
+						pauseOnHover
+					/>
+					{/*Can be written <Toaster />. Props defined are the same as the default one. */}
+				</div>
 			</div>
 		)
 	}
