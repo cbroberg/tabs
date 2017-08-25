@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
-import FaAutomobile from 'react-icons/lib/fa/automobile'
-import FaBed from 'react-icons/lib/fa/bed'
-import FaPlane from 'react-icons/lib/fa/plane'
-import FaSpaceShuttle from 'react-icons/lib/fa/space-shuttle'
+import * as Icons from 'react-icons/lib/md'
 import { Button, Header } from 'components/Styles'
 import { toast } from 'react-toastify'
 import Toaster from 'components/Toast.js'
@@ -75,26 +72,26 @@ class App extends Component {
 	render() {
 		const tabData = [
 			{ 
-				label: <FaAutomobile size={50}/>,
-				content: 'This is our car service',
-				notification: 'Thanks! You have selected our car service'
+				label: <Icons.MdCloudDownload size={50}/>,
+				content: 'This is our download service',
+				notification: 'Thanks! You have now downloaded our service'
 			},
 			{
-				label: <FaBed size={50}/>,
-				content: 'This is our hotel service',
-				notification: 'Thanks! You have selected our hotel service'
+				label: <Icons.MdCloudUpload size={50}/>,
+				content: 'This is our upload service',
+				notification: 'Thanks! You have uploaded your stuff to our service'
 			},
 			{
-				label: <FaPlane size={50}/>,
-				content: 'This is our air service',
-				notification: 'Thanks! You have selected our air service'
+				label: <Icons.MdLanguage size={50}/>,
+				content: 'This is our translation service',
+				notification: 'Thanks! You have selected our translation service'
 			},
 			{
-				label: <FaSpaceShuttle size={50} color={'orange'}/>,
-				content: 'This is our space shuttle service',
-				notification: 'Thanks! You have selected our space shuttle service'
+				label: <Icons.MdDateRange size={50} color={'orange'}/>,
+				content: 'This is our date selector service',
+				notification: 'Thanks! You have selected our date selector service'
 			},
-			
+
 		]
 		return (
 			<div id="app" className="blue-bg">
