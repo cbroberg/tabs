@@ -4,6 +4,7 @@ import { Button, Header } from 'components/Styles'
 import { toast } from 'react-toastify'
 import Toaster from 'components/Toast.js'
 
+
 class Tabs extends Component {
 	state = {
 		activeIndex: 0
@@ -110,7 +111,7 @@ class App extends Component {
 						closeOnClick
 						pauseOnHover
 					/>
-					{/*Can be written <Toaster />. Props defined are the same as the default one. */}
+					
 				</div>
 			</div>
 		)

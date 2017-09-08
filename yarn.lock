@@ -1319,10 +1319,6 @@ clap@^1.0.9:
   dependencies:
     chalk "^1.1.3"
 
-classnames@^2.2.5:
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
-
 clean-css@4.1.x:
   version "4.1.7"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.1.7.tgz#b9aea4f85679889cf3eae8b40349ec4ebdfdd032"
@@ -1983,10 +1979,6 @@ ee-first@1.1.1:
 electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.18:
   version "1.3.18"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.18.tgz#3dcc99da3e6b665f6abbc71c28ad51a2cd731a9c"
-
-element-class@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/element-class/-/element-class-0.2.2.tgz#9d3bbd0767f9013ef8e1c8ebe722c1402a60050e"
 
 elliptic@^6.0.0:
   version "6.4.0"
@@ -3033,12 +3025,6 @@ ieee754@^1.1.4:
 ignore@^3.3.3:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.3.tgz#432352e57accd87ab3110e82d3fea0e47812156d"
-
-immutability-helper@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/immutability-helper/-/immutability-helper-2.3.1.tgz#8ccfce92157208c120b2afad7ed05c11114c086e"
-  dependencies:
-    invariant "^2.2.0"
 
 imurmurhash@^0.1.4:
   version "0.1.4"
@@ -5150,18 +5136,6 @@ react-toastify@^2.0.0-rc.3:
     prop-types "^15.5.8"
     react-transition-group "^1.1.2"
 
-react-toastr@^2.9.3:
-  version "2.9.3"
-  resolved "https://registry.yarnpkg.com/react-toastr/-/react-toastr-2.9.3.tgz#52950afaf12f3b30a514d02c1930b1b1cf04ddbc"
-  dependencies:
-    classnames "^2.2.5"
-    create-react-class "^15.6.0"
-    element-class "^0.2.2"
-    immutability-helper "^2.3.1"
-    lodash "^4.17.4"
-    prop-types "^15.5.10"
-    react-dom "^15.6.1"
-
 react-transition-group@^1.1.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-1.2.0.tgz#b51fc921b0c3835a7ef7c571c79fc82c73e9204f"
@@ -6473,6 +6447,14 @@ wrap-ansi@^2.0.0:
 wrappy@1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
+
+wrapwrap@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/wrapwrap/-/wrapwrap-0.1.8.tgz#3917fdcbd9553c74f255f02778f25d22257d723b"
+  dependencies:
+    react "^15.6.1"
+    react-dom "^15.6.1"
+    styled-components "^2.1.2"
 
 write-file-atomic@^1.1.2:
   version "1.3.4"
